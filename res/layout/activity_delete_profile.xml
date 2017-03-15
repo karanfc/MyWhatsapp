@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.settings.DeleteProfile">
+<ImageView
+    android:layout_width="@dimen/logo_w_h"
+    android:layout_height="@dimen/logo_w_h"
+    android:layout_gravity="center"
+    android:layout_margin="16sp"
+    android:src="@mipmap/ic_logo"/>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WARNING!"
+        android:textColor="#f00"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="24sp" />
+
+            <TextView
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delete your account permanently"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Erase your message history"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delete all your groups"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:id="@+id/changeEmail1"
+            android:textStyle="italic"
+            android:layout_height="wrap_content"
+            android:text="Want to change your email instead?"/>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DELETE ACCOUNT"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:clickable="true"
+            android:textColor="#f00"
+
+            android:gravity="center"
+            android:id="@+id/deleteAccount1"
+            android:textSize="24sp"/>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
